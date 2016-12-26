@@ -4,9 +4,6 @@ git {
     repo     github.com/enantra/enantra-2017
     branch   master
     interval 600
-    then npm install
-    then forever stop production
-    then forever start -uid "production" /root/app/app.js
 }
 proxy / localhost:3000 {
   except /img /css /js /fonts
