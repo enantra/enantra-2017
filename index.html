@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Enantra 2017</title>
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -7,14 +8,18 @@
   <meta name="author" content="Enantra Tech">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="fonts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
-  <style>
-    img.speaker {
-      clip-path: url(#card);
-    }
-  </style>
 </head>
 
 <body>
+  <aside id="sidecar" class="form-embed is-collapsed">
+    <div class="form-embed-action-bar">
+      <a class="form-embed-action-bar-item form-embed-action-bar-item-pop-out" aria-label="Open Fullscreeen registration form"
+        href="https://e-reg.herokuapp.com?embed=false" target="_blank"></a>
+      <button id="collapse-sidecar" class="form-embed-action-bar-item form-embed-action-bar-item-collapse-chat" aria-label="Collapse Registration form"></button>
+    </div>
+    <div></div>
+  </aside>
+  <button id="trigger-sidecar" href="" class="form-button">Register</button>
   <div class="t">
     <nav class="navbar">
       <div class="dropdown hover">
@@ -31,7 +36,6 @@
           <li><a href="#overview">Overview</a></li>
           <li><a href="#sixdegree">Six degree</a></li>
           <li><a href="#events">Events</a></li>
-          <li><a href="https://e-reg.herokuapp.com">Signup</a></li>
         </ul>
       </div>
     </nav>
@@ -371,4 +375,5 @@
   <script src="js/enantra.js"></script>
 
 </body>
+
 </html>
