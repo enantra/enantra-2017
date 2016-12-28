@@ -28,7 +28,7 @@ app.use('/', (req, res) => {
   res.sendFile(page)
 })
 
-let port = '3000'
+let port = process.env.PORT || '3000'
 app.set('port', port)
 
 let server = http.createServer(app)
