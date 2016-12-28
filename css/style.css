@@ -117,8 +117,8 @@ section.home {
 
 .right {
   background-color: #6d6f71;
-  background: -webkit-linear-gradient(rgba(109, 111, 113, 1), rgba(230, 231, 232, 0.6)), url("../img/meetup.jpeg");
-  background: linear-gradient(rgba(109, 111, 113, 1), rgba(230, 231, 232, 0.6)), url("../img/meetup.jpeg");
+  background: -webkit-linear-gradient(rgba(109, 111, 113, 1), rgba(230, 231, 232, 0.6)), url("../img/meetup.jpg");
+  background: linear-gradient(rgba(109, 111, 113, 1), rgba(230, 231, 232, 0.6)), url("../img/meetup.jpg");
   background-size: cover;
   background-position: center;
 }
