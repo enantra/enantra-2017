@@ -1,8 +1,29 @@
 window.onload = function () {
-  document
-    .getElementsByClassName('container-loader')[0]
-    .remove()
+  document.getElementsByClassName('container-loader')[0].remove()
 }
+
+function sidecarSetup () {
+  var sidecar = document.getElementById('sidecar')
+  var trigger = document.getElementById('trigger-sidecar')
+  var collapse = document.getElementById('collapse-sidecar')
+
+  trigger.addEventListener('click', function () {
+    var frame = document.createElement('iframe')
+    frame.frameborder = '0'
+    frame.src = 'https://e-reg.herokuapp.com/enantra?embed=true'
+    sidecar.appendChild(frame)
+    sidecar.classList.remove('is-collapsed')
+    trigger.classList.add('is-collapsed')
+  })
+
+  collapse.addEventListener('click', function () {
+    sidecar.removeChild(sidecar.lastChild)
+    sidecar.classList.add('is-collapsed')
+    trigger.classList.remove('is-collapsed')
+  })
+}
+
+sidecarSetup()
 
 var titleID = document.getElementById('content-title')
 var bodyID = document.getElementById('content-body')
