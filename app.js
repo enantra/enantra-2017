@@ -11,14 +11,10 @@ app.use(useragent.express())
 app.use(logger('dev'))
 
 // In development, serve assets from node app
-let dev = process.env.DEBUG || false
-if (dev) {
-  app.use('/css', express.static(path.join(__dirname, 'css')))
-  app.use('/img', express.static(path.join(__dirname, 'img')))
-  app.use('/js', express.static(path.join(__dirname, 'js')))
-  app.use('/fonts', express.static(path.join(__dirname, 'fonts')))
-}
-
+app.use('/css', express.static(path.join(__dirname, 'css')))
+app.use('/img', express.static(path.join(__dirname, 'img')))
+app.use('/js', express.static(path.join(__dirname, 'js')))
+app.use('/fonts', express.static(path.join(__dirname, 'fonts')))
 
 let mobile = path.join(__dirname, 'index.mob.html')
 let desktop = path.join(__dirname, 'index.html')
