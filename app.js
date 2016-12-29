@@ -10,6 +10,12 @@ let app = express()
 app.use(useragent.express())
 app.use(logger('dev'))
 
+// In development, serve assets from node app
+app.use('/css', express.static(path.join(__dirname, 'css')))
+app.use('/img', express.static(path.join(__dirname, 'img')))
+app.use('/js', express.static(path.join(__dirname, 'js')))
+app.use('/fonts', express.static(path.join(__dirname, 'fonts')))
+
 let mobile = path.join(__dirname, 'index.mob.html')
 let desktop = path.join(__dirname, 'index.html')
 
@@ -18,7 +24,7 @@ app.use('/', (req, res) => {
   res.sendFile(page)
 })
 
-let port = '3000'
+let port = process.env.PORT || '3000'
 app.set('port', port)
 
 let server = http.createServer(app)
