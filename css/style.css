@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 /* globals */
-:root {
-  --font: 'Lato', Helvetica, sans-serif;
-  --accent: #9ccf5e;
-  --bg: #403638;
-  --transform: translate(-50%, -50%);
-}
-
 html,
 body {
   padding: 0px;
@@ -18,7 +11,7 @@ body {
   left: 0;
   right: 0;
   overflow-x: hidden;
-  font-family: var(--font);
+  font-family: 'Lato', Helvetica, sans-serif;
 }
 
 section {
@@ -368,7 +361,7 @@ section.home {
   color: #fff;
   border-top-left-radius: .5em;
   border-top-right-radius: .5em;
-  font-family: var(--font);
+  font-family: 'Lato', Helvetica, sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -440,7 +433,7 @@ dropdown.toggle>label {
   display: block;
   text-align: center;
   text-decoration: none;
-  font-family: var(--font);
+  font-family: 'Lato', Helvetica, sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: lighter;
@@ -710,7 +703,7 @@ div#aside .clock {
 
 div#aside small {
   font-size: .75em;
-  color: var(--accent);
+  color: #9ccf5e;
   -webkit-transition: color 3000ms linear;
   transition: color 3000ms linear;
 }
@@ -875,9 +868,9 @@ div#aside {
   -ms-flex-pack: center;
   justify-content: center;
   overflow: hidden;
-  font-family: var(--font);
+  font-family: 'Lato', Helvetica, sans-serif;
   font-size: calc(1em + 1.5vmin);
-  background: var(--bg);
+  background: #403638;
   -webkit-transition: background 1500ms linear;
   transition: background 1500ms linear;
   color: #fff;
@@ -933,7 +926,7 @@ div#main header {
 
 .speaker {
   height: auto;
-  flex: 0 1 25%;
+  flex: 0 1 20%;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 15px;
@@ -1036,7 +1029,7 @@ div#main header {
   margin-top: 0;
   color: #666;
   text-align: center;
-  font-family: var(--font);
+  font-family: 'Lato', Helvetica, sans-serif;
 }
 
 .popup .close {
@@ -1271,7 +1264,7 @@ footer{
 }
 .tabs .content section h2,
 .tabs ul li label {
-  font-family: var(--font);
+  font-family: 'Lato', Helvetica, sans-serif;
   font-weight: bold;
   font-size: 18px;
   color: #428BFF;
