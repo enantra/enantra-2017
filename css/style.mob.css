@@ -842,7 +842,7 @@
 
   @media screen and (min-device-width: 320px) and (max-device-width: 640px) {
     .popup {
-    margin: 50px auto;
+    margin: 25px auto;
     padding: 15px;
     background: #fff;
     border: 1px solid #666;
@@ -852,6 +852,10 @@
     position: relative;
     border-radius: 5px;
       
+    }
+
+    .popup content {
+      margin-top: -10px;
     }
 
     .popup .close {
@@ -870,7 +874,7 @@
 
 
   .popup h2 {
-    margin-top: 0;
+    margin-top: 5px;
     color: #666;
     text-align: center;
     font-size: 120%;
