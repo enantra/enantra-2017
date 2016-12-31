@@ -9,7 +9,7 @@ window.onload = function () {
     trigger.addEventListener('click', function () {
       var frame = document.createElement('iframe')
       frame.frameborder = '0'
-      frame.src = 'https://e-reg.herokuapp.com/enantra?embed=true'
+      frame.src = 'https://register.enantra.org/enantra?embed=true'
       sidecar.appendChild(frame)
       sidecar.classList.remove('is-collapsed')
       trigger.classList.add('is-collapsed')
