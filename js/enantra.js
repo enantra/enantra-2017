@@ -80,11 +80,11 @@ window.onload = function () {
       agenda: [
         {
           range: [
-            '16:30', '18:59'
+            '17:00', '19:29'
           ],
           display: {
-            h: 6,
-            m: 30,
+            h: 5,
+            m: 00,
             a: 'pm'
           },
           location: 'Vivekananda Auditorium',
