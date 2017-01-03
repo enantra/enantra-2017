@@ -84,7 +84,7 @@ window.onload = function () {
           ],
           display: {
             h: 5,
-            m: 00,
+            m: '00',
             a: 'pm'
           },
           location: 'Vivekananda Auditorium',
