@@ -76,7 +76,7 @@ window.onload = function () {
 
   var schedule = [
     {
-      date: 'Day 1 &mdash; Mon, Jan 19',
+      date: 'Day 1 &mdash; Thu, Jan 19',
       agenda: [
         {
           range: [
@@ -93,7 +93,7 @@ window.onload = function () {
       ]
     },
     {
-      date: 'Day 2 &mdash; Tue, Jan 20',
+      date: 'Day 2 &mdash; Fri, Jan 20',
       agenda: [
         {
           range: [
