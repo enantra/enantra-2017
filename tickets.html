@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <!-- Basic Page Needs
+        ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enantra 2017</title>
+    <meta name="description" content="Enantra">
+    <meta name="keywords" content="enantra">
+    <meta name="author" content="Enantra Tech">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <style>
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Lato');
+        .heading{
+        text-align:center;
+        color:#233e6a;
+        font-size:25px;
+        font-weight:600;
+        padding:20px;
+        text-transform:uppercase;
+        font-family: 'Lato', sans-serif;
+        }
+        .btn-primary{
+        background:#233e6a;
+        border:none;
+        color:#fff;
+        }
+        .btn-primary:hover{
+        background:#6d6f71;
+        }
+        .btn span.glyphicon {    			
+            opacity: 0;				
+        }
+        .btn.active span.glyphicon {				
+            opacity: 1;				
+        }
+        .center-block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;
+        }
+        .form-group{
+        width:60%;
+        font-family: 'Lato', sans-serif;
+        }
+        @media(max-width:700px){
+        .form-group{
+            width:80%;
+        }
+        }
+        /*checkbox*/
+        .checkbox {
+            padding-left: 20px;
+            margin:5px auto 0 auto; }
+            .checkbox label {
+                display: inline-block;
+                position: relative;
+                padding-left: 5px; }
+                .checkbox label::before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                left: 0;
+                top: -2px;
+                margin-left: -20px;
+                border: 1px solid #cccccc;
+                border-radius: 3px;
+                background-color: #fff;
+                -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+                -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+                transition: border 0.15s ease-in-out, color 0.15s ease-in-out; }
+                .checkbox label::after {
+                display: inline-block;
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                left: 0;
+                top: 0;
+                margin-left: -20px;
+                padding-left: 3px;
+                padding-top: 1px;
+                font-size: 11px;
+                color: #555555; }
+            .checkbox input[type="checkbox"] {
+                opacity: 0; }
+                .checkbox input[type="checkbox"]:focus + label::before {
+                outline: thin dotted;
+                outline: 5px auto -webkit-focus-ring-color;
+                outline-offset: -2px; }
+                .checkbox input[type="checkbox"]:checked + label::after {
+                font-family: 'FontAwesome';
+                content: "\f00c"; }
+                .checkbox input[type="checkbox"]:disabled + label {
+                opacity: 0.65; }
+                .checkbox input[type="checkbox"]:disabled + label::before {
+                    background-color: #eeeeee;
+                    cursor: not-allowed; }
+            .checkbox.checkbox-circle label::before {
+                border-radius: 50%; }
+            .checkbox.checkbox-inline {
+                margin-top: 0; }
+
+            .checkbox-primary input[type="checkbox"]:checked + label::before {
+            background-color: #428bca;
+            border-color: #428bca; }
+            .checkbox-primary input[type="checkbox"]:checked + label::after {
+            color: #fff; }
+
+            .checkbox-danger input[type="checkbox"]:checked + label::before {
+            background-color: #d9534f;
+            border-color: #d9534f; }
+            .checkbox-danger input[type="checkbox"]:checked + label::after {
+            color: #fff; }
+
+            .checkbox-info input[type="checkbox"]:checked + label::before {
+            background-color: #5bc0de;
+            border-color: #5bc0de; }
+            .checkbox-info input[type="checkbox"]:checked + label::after {
+            color: #fff; }
+
+            .checkbox-warning input[type="checkbox"]:checked + label::before {
+            background-color: #f0ad4e;
+            border-color: #f0ad4e; }
+            .checkbox-warning input[type="checkbox"]:checked + label::after {
+            color: #fff; }
+
+            .checkbox-success input[type="checkbox"]:checked + label::before {
+            background-color: #5cb85c;
+            border-color: #5cb85c; }
+            .checkbox-success input[type="checkbox"]:checked + label::after {
+            color: #fff; }
+
+            .label{
+                font-family: 'Lato', sans-serif;
+            }
+            .btn{
+                font-family: 'Lato', sans-serif;
+            }
+    </style>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    </head>
+    <body>  
+       <div class="container">
+            <div class="heading">
+                Six degree talks
+            </div>
+            <form class="container" action="">
+                <div class="form-group center-block">
+                    <label for="eid">Enantra ID</label>
+                    <input type="text" class="form-control" id="eid" placeholder="Enantra ID">
+                </div>
+                <div class="form-group center-block">
+                    <h5>Select days you need tickets</h5>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                             <div class="checkbox">
+                                <input id="day1" type="checkbox">
+                                <label for="day1">
+                                    Day 1
+                                </label>
+                            </div>
+                            <button class="btn btn-link"data-toggle="collapse" data-parent="#accordion" href="#collapseOne" >
+                               (Click to expand/close)
+                            </button>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                             <div class="checkbox">
+                                <input id="day2" type="checkbox">
+                                <label for="day2">
+                                    Day 2
+                                </label>
+                            </div>
+                            <button class="btn btn-link"data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                               (Click to expand/close)
+                            </button>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                             <div class="checkbox">
+                                <input id="day3" type="checkbox">
+                                <label for="day3">
+                                    Day 3
+                                </label>
+                            </div>
+                            <button class="btn btn-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                               (Click to expand/close)
+                            </button>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                             <div class="checkbox">
+                                <input id="day4" type="checkbox">
+                                <label for="day4">
+                                    Day 4
+                                </label>
+                            </div>
+                            <button class="btn btn-link"data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                               (Click to expand/close)
+                            </button>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    <img src="img/varun.jpg" alt="Varun Agarwal" class="img-circle" style="width:100px;">
+                                    <h4>Varun Agarwal</h4>
+                                    <p>Author and CEO</p>
+                                    <h6>8.20AM</h6>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-group center-block">
+                <h5>You have to pay <span id="amt">$200</span></h5>
+                </div>
+                <input class="btn btn-primary center-block" type="submit" value="Checkout">
+            </form>
+            </div
+       
+       
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </body>
+</html>

@@ -386,22 +386,23 @@ window.onload = function () {
       }
     },
     'marathon': {
-      'pop-title': 'Marketing marathon',
+      'pop-title': 'Marketing Marathon',
       'content': {
         'description': 'An event in which participants get to advertise products and showcase their skills.',
         'format': [
-          'Round 1: The first round is similar to adzap. An innovative product will be provided to each team and they will be given 10 minutes to discuss. The team has to present their idea.',
-          'Round 2: In the 2nd round, each team has to prepare and enact a 1-minute ad for the same product that was given in the 1st round. Best teams will be selected for the 3rd and final round.',
-          'Round 3: The 3rd round is an on-going promotion round where the teams have to promote their product to a large crowd.',
-          'Round 4 : In the final round, the teams have to campaign for a cause (for the society, environment, etc).',
-          'Note: Marketing marathon has a pre-requisite round which gives direct entry to the 2nd round. The teams have to register earlier and market an enantra poster. The poster with maximum "likes" gets selected for the 2nd round directly.'
+          'Pre-requisite round (Ad-Selfie): Each team has to take selfies with a product they would like to endorse with a catchy and captivating tagline. The selfie with maximum number of likes gets direct entry to the 2nd round.',
+          'Round 1 (News Analysis): In the 1st round, each team will be provided with a news article. The team has to analyse the article in 30 seconds and present their views and opinions on it for 2 minutes infront of the judges. Questions can be raised by the judges. The team with the most relevant and clear presentation gets selected for the next round.',
+          'Round 2(Adzap): Each team will be provided with an innovative product and they have to prepare and enact a 1-minute ad film. Preparation time is 10 minutes. The best teams chosen by the judges will be qualified for the next round.',
+          'Round 3 (Campaign for a Cause): In the final round, the teams have to campaign for a cause (for the society, environment, etc) and collect money. Teams can go around Chennai pitching and they are requested to assemble in CEG at 1.30 sharp.'
         ],
         'rules': [
           'For pre requisite round, teams have to register before January 7th, 2017.',
           'Group/individual participation.',
           'College ID cards and enantra registration ID must be in possession of each of participants during the event.',
-          'Teams may consist 5-7 members.',
-          'Performance time: 1st round - 3 minutes, 2nd round- 1 minute, 3rd round- 5-7 minutes, 4th round- 10 minutes.',
+          'Teams may consist 4-7 members.',
+          'Elimination is present after every round',
+          'Performance time: 1st round - 2 minutes, 2nd round- 1 minute',
+          'Preparation time: 2nd round - 10 minutes',
           'Phone/internet usage is strictly restricted during the game.',
           'Vulgarity & obscenity would lead to disqualification.',
           'Violation of rules or indulging in malpractices may lead to disqualification.',
@@ -419,13 +420,11 @@ window.onload = function () {
       'content': {
         'description': 'An interesting event that puts your knowledge to test. Questions will be thrown by the participant for which the answers will be a mere yes or no. Lucky winners are the smart ones who finds the personality in the grandmaster’s mind.',
         'format': [
-          'One of the Enantra member will be questioned by participants. Every participant gets 50 minutes time. The event consist of two rounds.',
-          'Round 1 - The participant has to find the entity (company) the organizer is thinking of within 21 questions. The 21 questions should be framed in such a way that the answer will be a yes or no. Participants will be selected for the next round if guessed right.',
-          'Round 2 - The participant has to find the personality the organizer is thinking of within 15 questions. Time limit is 45 minutes. Participant will be awarded if guessed If the game exceeds the time limit, then the participant is disqualified.  The identity to be found changes regardless of each game’s status.'
+          'One of the Enantra member will be questioned by participants. Every participant gets 30 minutes time. The participant has to find a personality the organizer is thinking of within 21 questions. The 21 questions should be framed in such a way that the answer will be a yes or no. The participant who guesses it right within minimum time will be awarded. If the game exceeds the time limit, then the participant is disqualified. The identity to be found changes regardless of each game’s status.'
         ],
         'rules': [
           'Individual participation',
-          'College ID cards and enantra registration ID must be in possession of each of participants during the event',
+          'College ID cards and Enantra ID must be in possession of each of participants during the event',
           'Entities are companies & Personalities are entrepreneurs',
           'Only 21 questions are allowed for round 1 and 15 questions for round 2',
           'Organizer will give either a yes or a no as an answer',
@@ -451,14 +450,14 @@ window.onload = function () {
         'rules': [
           'Group/Individual participation',
           'Teams may consist of 2-3 members each.',
-          'College ID cards and enantra registration ID must be in possession of each of participants during the event',
+          'College ID cards and Enantra ID must be in possession of each of participants during the event',
           'Buzzer round is for 20 minutes ',
           'Buzzer round has negative marking ',
           'Phones are not allowed',
           'Usage of internet is restricted',
           'No negative marking',
-          'Min of 3 teams will be qualified for finals',
-          'Teams that are suspected for malpractices will be disqualified on spot',
+          'Minimum of 3 teams will be qualified for finals',
+          'Teams that are suspected of malpractices will be disqualified on spot',
           'Violation of rules may lead to disqualification'
         ],
         'contacts': [
@@ -482,7 +481,7 @@ window.onload = function () {
           'Prize will not be given if the performance is not relevant ',
           'Preparation time: 5 minutes ',
           'Performance time: 2-3 minutes ',
-          'College ID cards and enantra registration ID must be in possession of each of participants during the event',
+          'College ID cards and Enantra ID must be in possession of each of participants during the event',
           'Phone usage is not allowed',
           'Violation of rules may lead to disqualification ',
           'Prizes can be seized in case of malpractices ',
