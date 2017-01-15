@@ -976,6 +976,9 @@ div#main header {
   text-align: center;
 }
 
+.speakers-title h3.enantra-blue {
+  color: #233e6a;
+}
 
 /*for the modal*/
 
@@ -1138,6 +1141,10 @@ ul {
   background: #233e6a;
 }
 
+#partners {
+  background: #fff;
+}
+
 .events-list {
   margin: 0 auto;
   padding: 0;
@@ -1160,13 +1167,17 @@ ul {
   -ms-flex-flow: row nowrap;
   padding-bottom: 20px;
 }
+
+#partners .event-row {
+  padding-bottom: 0px;
+}
+
 .event-row a{
   text-decoration: none;
 }
 
 .event {
   height: auto;
- 
   flex: 0 1 33%;
   margin: 0 auto;
   display: block;
@@ -1176,6 +1187,24 @@ ul {
   padding-left: 0;
   border-radius: 10%;
 }
+
+.partner {
+  height: auto;
+  flex: 0 1 33%;
+  margin: 0 auto;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  /*padding-left: 0;*/
+  border-radius: 10%;
+}
+
+img.partner {
+  width: 190px;
+  background-size: cover;
+}
+
 #mini-events .event{
   width: 60%;
 }
