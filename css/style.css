@@ -1168,7 +1168,16 @@ ul {
   padding-bottom: 20px;
 }
 
+.tech-talk {
+  width: 30%;
+}
+
+.fundas {
+  width: 30%;
+}
+
 #partners .event-row {
+  width: 90%;
   padding-bottom: 0px;
 }
 
