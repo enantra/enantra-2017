@@ -1591,3 +1591,23 @@ footer{
 .social-item:hover{
   color: #233e6a;
 }
+
+.btn {
+  display: inline-block;
+  background-color: #233e6a;
+  color: #fff;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 2px;
+  border-radius: 5%;
+}
+
+.btn-black {
+  display: inline-block;
+  background-color: #fff;
+  color: #233e6a;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 2px;
+  border-radius: 5%;
+}
