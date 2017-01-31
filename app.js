@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const logger = require('morgan')
 const useragent = require('express-useragent')
-const debug = require('debug')('avar:server')
+const debug = require('debug')('enantra:server')
 const http = require('http')
 
 let app = express()

@@ -1,81 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-/* globals */
-html,
-body {
-  padding: 0px;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow-x: hidden;
-  font-family: 'Lato', Helvetica, sans-serif;
-}
-
-section {
-  width: 100%;
-  height: 100%;
-}
-
-/* Loader */
-.container-loader {
-  background: #fff;
-  text-align: center;
-  position: relative;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  transition: opacity 1s ease-in-out;
-}
-
-.container-hide {
-  opacity: 0;
-  width: 0;
-  height: 0;
-  z-index: -1;
-  visibility: hidden;
-  display: none;
-}
-
-#loader svg {
-  animation: draw 5000ms linear infinite;
-}
-
-@keyframes draw {
-  0% {
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1000;
-    fill-opacity: 0;
-    stroke-width: 4;
-  }
-  25% {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    fill-opacity: 0;
-    stroke-width: 4;
-  }
-  50% {
-    stroke-dasharray: 500;
-    stroke-dashoffset: 500;
-    fill-opacity: 0;
-    stroke-width: 4;
-  }
-  75% {
-    stroke-dasharray: 200;
-    stroke-dashoffset: 0;
-    fill-opacity: .5;
-    stroke-width: 4;
-  }
-  100% {
-    fill-opacity: 1;
-    stroke-width: 0;
-    stroke-opacity: 0;
-  }
-}
 /* Homepage */
 section.home {
   position: relative;
@@ -126,6 +50,14 @@ section.home {
   flex-flow: column nowrap;
   justify-content: center;
   text-align: center;
+}
+
+#contact.container {
+  left: 20px;
+}
+
+#contact p {
+  color: #888;
 }
 
 .logo {
@@ -218,7 +150,7 @@ section.home {
 .title-card .container h3 {
   margin: 0;
   padding: 10px 0px 5px 0px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   color: #A57201;
   text-transform: uppercase;
@@ -1163,7 +1095,10 @@ ul {
   justify-content: space-around;
   flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
-  padding-bottom: 20px;
+}
+
+.bottom-row {
+  width: 50%;
 }
 
 .tech-talk {
@@ -1607,5 +1542,6 @@ footer{
   box-sizing: border-box;
   text-decoration: none;
   margin: 2px;
+  padding: 5px;
   border-radius: 5%;
 }
