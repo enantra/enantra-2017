@@ -1,35 +1,111 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Enantra 2017</title>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-  <meta content="utf-8" http-equiv="encoding">
-  <meta name="author" content="Enantra Tech">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="fonts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod
-          ? n.callMethod.apply(n, arguments)
-          : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    } (window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '690735181101310')
-    fbq('track', 'PageView')
-  </script>
+  <head>
+    <title>Enantra 2017</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="author" content="Enantra Tech">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="fonts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+    <style>
+html,
+body {
+  padding: 0px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  font-family: 'Lato', Helvetica, sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+.container-loader {
+  background: #fff;
+  text-align: center;
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: opacity 1s ease-in-out;
+}
+
+.container-hide {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  visibility: hidden;
+  display: none;
+}
+
+#loader svg {
+  animation: draw 5000ms linear infinite;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1000;
+    fill-opacity: 0;
+    stroke-width: 4;
+  }
+  25% {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    fill-opacity: 0;
+    stroke-width: 4;
+  }
+  50% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    fill-opacity: 0;
+    stroke-width: 4;
+  }
+  75% {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 0;
+    fill-opacity: .5;
+    stroke-width: 4;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-width: 0;
+    stroke-opacity: 0;
+  }
+}
+</style>
+<script>
+  !function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod
+        ? n.callMethod.apply(n, arguments)
+        : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  } (window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '690735181101310')
+  fbq('track', 'PageView')
+</script>
 <noscript>
   <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=690735181101310&ev=PageView&noscript=1" />
 </noscript>
@@ -131,8 +207,7 @@
     </div>
     <div class="title-card">
       <div class="container">
-        <h3>Enantra has been postponed in the light of recent societal unrest. We will be rescheduled back bigger and better
-          very soon. </h3>
+        <h3>Enantra, South India's Biggest Entrepreneurship Festival from February 23rd - 26th.</h3>
         <!--<a href="#mega-events">
           <p>Read More <span>&xrarr;</span></p>
         </a>-->
@@ -201,7 +276,7 @@
       </div>
     </div>
   </section>
-
+  
   <section id="sixdegree">
     <div class="speakers-title">
       <h3 class="enantra-blue">
@@ -257,107 +332,107 @@
     <div class="speakers-title">
       <h3>
         Workshops
-        <!--<a href="https://register.enantra.org/workshop" target="blank" class="btn-black"> Register </a>-->
+        <a href="https://register.enantra.org/workshop" target="blank" class="btn-black"> Register </a>
       </h3>
     </div>
     <div class="events-list box">
       <div class="event-row box">
-        <a href="#e-disabled"><img class="event" src="img/WSDA.png" />
-          <div class="event-name">Entrepreneurship for Differently Abled</div>
+        <a href="#how-strtup"><img class="event" src="img/WSHTBAS.png" />
+          <div class="event-name">How to build a startup?</div>
         </a>
-        <a href="#e-kids"><img class="event" src="img/WSDM.png" width="200px" />
+        <a href="#e-kids"><img class="event" src="https://res.cloudinary.com/enantra/image/upload/v1483848428/WSDM.png" />
           <div class="event-name">Entrepreneurship for kids</div>
         </a>
+        <a href="#e-disabled"><img class="event" src="https://res.cloudinary.com/enantra/image/upload/v1483848429/WSDA.png" />
+          <div class="event-name">Entrepreneurship for Differently Abled</div>
+        </a>
+      </div>
+      <div class="event-row box bottom-row">
         <a href="#growth-hack"><img class="event" src="img/WSGH.png" width="200px" />
           <div class="event-name">Growth Hacking</div>
         </a>
+        <a href="#stock-market"><img class="event" src="img/WSSM.png" width="200px" />
+          <div class="event-name">Stock Market</div>
+        </a>
       </div>
-      <div class="event-row box" style="width:50%;">
-<a href="#how-strtup"><img class="event" src="img/WSHTBAS.png" width="200px" />
-  <div class="event-name">How to build a startup?</div>
-</a>
-<a href="#stock-market"><img class="event" src="img/WSSM.png" width="200px" />
-  <div class="event-name">Stock Market</div>
-</a>
-</div>
-</div>
-</section>
+    </div>
+  </section>
 
-<section id="ebm">
-  <div class="container">
-    <h2>Enantra Brand Manager</h2>
-    <h4>We from Anna Univ, Chennai are proposing a unique offer to be a part of South India’s largest Managements fest-Enantra!
-      An one-stop shop to hone your communication, inter-personnel and managerial skills while networking with corporate
-      giants and interacting with an eclectic crowd. Thus we are putting forward to you the position of a Student Brand Manager
-      member to come forth and represent each college.
-    </h4>
-    <a href="https://register.enantra.org/ebd" target="_blank">Know more &xrarr;</a>
-  </div>
-</section>
+  <section id="ebm">
+    <div class="container">
+      <h2>Enantra Brand Manager</h2>
+      <h4>We from Anna Univ, Chennai are proposing a unique offer to be a part of South India’s largest Managements fest-Enantra!
+        An one-stop shop to hone your communication, inter-personnel and managerial skills while networking with corporate
+        giants and interacting with an eclectic crowd. Thus we are putting forward to you the position of a Student Brand
+        Manager member to come forth and represent each college.
+      </h4>
+      <a href="https://register.enantra.org/ebd" target="_blank">Know more &xrarr;</a>
+    </div>
+  </section>
 
-<section id="partners">
-  <div class="speakers-title">
-    <h3 class="enantra-blue">Partners</h3>
-  </div>
-  <div class="events-list box">
-    <div class="event-row box">
-      <a href="https://www.jio.com">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484493602/logo_jio.png" />
-      </a>
-      <a href="http://www.thehindubusinessline.com/">
-        <img class="partner" src="http://res.cloudinary.com/enantra/image/upload/v1484490341/logo_businessline.png" />
-      </a>
+  <section id="partners">
+    <div class="speakers-title">
+      <h3 class="enantra-blue">Partners</h3>
     </div>
-    <div class="event-row box">
-      <a href="https://www.nearbuy.com" target="blank">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484490340/logo_nearbuy.png" />
-      </a>
-      <a href="http://paulsons.in/toni-and-guy.php" target="blank">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484490340/logo_toni.png" />
-      </a>
-      <a href="http://paulsons.in/jonahs-bistro.php" target="blank">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484491712/logo_jonah.png" />
-      </a>
-      <a href="http://paulsons.in/slam-fitness.php" target="blank">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484490343/logo_slam.png" />
-      </a>
-      <a href="https://tech-talk.org/" target="blank">
-        <img class="partner tech-talk" src="https://res.cloudinary.com/enantra/image/upload/v1484492671/logo_techtalk.png" />
-      </a>
+    <div class="events-list box">
+      <div class="event-row box">
+        <a href="https://www.jio.com">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484493602/logo_jio.png" />
+        </a>
+        <a href="http://www.thehindubusinessline.com/">
+          <img class="partner" src="http://res.cloudinary.com/enantra/image/upload/v1484490341/logo_businessline.png" />
+        </a>
+      </div>
+      <div class="event-row box">
+        <a href="https://www.nearbuy.com" target="blank">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484490340/logo_nearbuy.png" />
+        </a>
+        <a href="http://paulsons.in/toni-and-guy.php" target="blank">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484490340/logo_toni.png" />
+        </a>
+        <a href="http://paulsons.in/jonahs-bistro.php" target="blank">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484491712/logo_jonah.png" />
+        </a>
+        <a href="http://paulsons.in/slam-fitness.php" target="blank">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484490343/logo_slam.png" />
+        </a>
+        <a href="https://tech-talk.org/" target="blank">
+          <img class="partner tech-talk" src="https://res.cloudinary.com/enantra/image/upload/v1484492671/logo_techtalk.png" />
+        </a>
+      </div>
+      <div class="event-row box">
+        <a href="http://paulsons.in/haagendazs.php" target="blank">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484490341/logo_haagen.png" />
+        </a>
+        <a href="http://paulsons.in/provoke.php" target="blank">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484490342/logo_provoke.png" />
+        </a>
+        <a href="http://paulsons.in/essensuals.php" target="blank">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484492111/logo_essensuals.png" />
+        </a>
+        <a href="http://www.business-fundas.com/" target="blank">
+          <img class="partner fundas" src="https://res.cloudinary.com/enantra/image/upload/v1484492544/logo_fundas.png" />
+        </a>
+        <a href="http://paulsons.in/chakra-urban-spa.php" target="blank">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484491636/logo_chakra.png" />
+        </a>
+      </div>
+      <div class="event-row box">
+        <a href="https://yourstory.com" target="blank">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484492750/logo_yourstory.png" />
+        </a>
+        <a href="http://www.chennailive.fm" target="blank">
+          <img class="partner tech-talk" src="https://res.cloudinary.com/enantra/image/upload/v1484588343/logo_chennailive.png" />
+        </a>
+        <a href="https://www.shopclues.com/" target="blank">
+          <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484493133/logo_shopclues.png" />
+        </a>
+      </div>
     </div>
-    <div class="event-row box">
-      <a href="http://paulsons.in/haagendazs.php" target="blank">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484490341/logo_haagen.png" />
-      </a>
-      <a href="http://paulsons.in/provoke.php" target="blank">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484490342/logo_provoke.png" />
-      </a>
-      <a href="http://paulsons.in/essensuals.php" target="blank">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484492111/logo_essensuals.png" />
-      </a>
-      <a href="http://www.business-fundas.com/" target="blank">
-        <img class="partner fundas" src="https://res.cloudinary.com/enantra/image/upload/v1484492544/logo_fundas.png" />
-      </a>
-      <a href="http://paulsons.in/chakra-urban-spa.php" target="blank">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484491636/logo_chakra.png" />
-      </a>
-    </div>
-    <div class="event-row box">
-      <a href="https://yourstory.com" target="blank">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484492750/logo_yourstory.png" />
-      </a>
-      <a href="http://www.chennailive.fm" target="blank">
-        <img class="partner tech-talk" src="https://res.cloudinary.com/enantra/image/upload/v1484588343/logo_chennailive.png" />
-      </a>
-      <a href="https://www.shopclues.com/" target="blank">
-        <img class="partner" src="https://res.cloudinary.com/enantra/image/upload/v1484493133/logo_shopclues.png" />
-      </a>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!--<section id="agenda" class="box">
+  <!--<section id="agenda" class="box">
   <div id="main">
     <section id="schedule">
       <header id="day">Day 1 &mdash; Jan 19</header>
@@ -386,380 +461,380 @@
   </div>
 </section>-->
 
+  <!--footer-->
+  <footer>
+    <section id="contact">
+      <div class="container">
+        <div class="con-title">Contact</div>
+        <div class="con-content">
+          Center for Entrepreneurship development,
+          <br>College of Engineering Guindy,
+          <br>Anna University,
+          <br>Chennai -600025
+        </div>
+        <div class="con-phone">
+          Naghma +91 96000 18978
+          <br> Susheel +91 97907 79717
+        </div>
 
-<!--footer-->
-<footer>
-  <section id="contact">
-    <div style="left:20px;" class="container">
-<div class="con-title">Contact</div>
-<div class="con-content">
-  Center for Entrepreneurship development,
-  <br>College of Engineering Guindy,
-  <br>Anna University,
-  <br>Chennai -600025
-</div>
-<div class="con-phone">
-  Naghma +91 96000 18978
-  <br> Susheel +91 97907 79717
-</div>
-
-<div class="social">
-  <a href="https://facebook.com/enantra" class="social-item">
-    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-  </a>
-  <a href="https://blog.enantra.org" class="social-item">
-    <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
-  </a>
-</div>
-<p style="color:#888;"> Developed by Enantra Tech &copy; Enantra 2016-17</p>
-</div>
-</section>
-</footer>
-
-<!--modals for poping up-->
-<div id="varun" class="overlay">
-  <div class="popup">
-    <img class="sp-img" src="img/varun.jpg" width="150px">
-    <h2>Varun Agarwal</h2>
-    <a class="close" href="#sixdegree">&times;</a>
-    <div class="content">
-      <p>Varun Agarwal is a first generation entrepreneur, film maker and author. Still in his twenties, he has three companies
-        to his credit. Co founder of AlmaMater- India's largest company for student merchandise, Varun Agarwal has been featured
-        on the cover of India Today. He is the epitome of progress and a true student hero. His success has inspired thousands
-        of student entrepreneurs. </p>
-      <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-    </div>
-  </div>
-</div>
-
-<div id="nagaraj" class="overlay">
-  <div class="popup">
-    <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150/v1484627722/speaker_mylandla.png">
-    <h2>Nagaraj Mylandla</h2>
-    <a class="close" href="#sixdegree">&times;</a>
-    <div class="content">
-      <p>Nagaraj V Mylandla is the Founder and Managing Director of FSS - Financial Software &amp; Systems, a global payments
-        technology and transactions processing leader headquartered in Chennai, India. Nagaraj, also known as the maverick
-        of the Indian Payment Industry, pioneered payment systems and solutions in India as early as 1991 by creating FSS.
-        The Indian banking Industry saw the dawn of a new era in payments driven by technology to serve the virgin Indian
-        market with a billion people. Today, his creation has taken giant strides in the international markets and transformed
-        into a global payments organisation. Nagaraj Mylandla is now all geared for disrupting the payment ecosystem with
-        future ready products and services for the mobile and digitally inclined consumers with focus on both retail and
-        wholesale segments.</p>
-      <a href="https://register.enantra.org/day2" class="btn btn-primary"> Buy tickets here <span>&xrarr;</span> </a>
-    </div>
-  </div>
-</div>
-
-<div id="velumani" class="overlay">
-  <div class="popup">
-    <img class="sp-img" src="img/velumani.jpg" width="150px">
-    <h2>Dr. Velumani</h2>
-    <a class="close" href="#sixdegree">&times;</a>
-    <div class="content">
-      <p>Dr. Velumani is an Indian scientist turned entrepreneur. His success story is one that people look up to in awe. From
-        3 lakhs to 3300 crores and 19 years of experience in the diagnostic business, his reputation as both scientist and
-        entrepreneur cannot be overshadowed. With multiple degrees and extensive field knowledge, he is the founder, acting
-        chairman and managing director of Thyrocare technologies.</p>
-      <a href="https://register.enantra.org/day2" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-    </div>
-  </div>
-</div>
-<div id="sujayath" class="overlay">
-  <div class="popup">
-    <img class="sp-img" src="img/sujayath.jpg" width="150px">
-    <h2>Sujayath Ali</h2>
-    <a class="close" href="#sixdegree">&times;</a>
-    <div class="content">
-      <p>Voonik is 'the' online marketplace for women's fashion. Working on a 10,000 rule algorithm, Voonik is a grand success.
-        Co founder, Sujayath Ali is a dexterous software development engineer and an internet entrepreneur. He is the acting
-        CEO of Voonik and has innate qualities that enable him to sustain and develop a franchise in such an aggressive market.
-      </p>
-      <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-    </div>
-  </div>
-</div>
-<div id="kk" class="overlay">
-  <div class="popup">
-    <img class="sp-img" src="img/kk.jpg" width="150px">
-    <h2>Karthik Kumar</h2>
-    <a class="close" href="#sixdegree">&times;</a>
-    <div class="content">
-      <p>Karthik Kumar is our humour guru. He is an actor and a stand up comedian who's shows are most looked forward to. While
-        all of us are trapped in this rat race, Mr. Karthik chose his career line in one swift audacious move. Following
-        his heart, he took up the mantle of livening our boring lives.</p>
-      <a href="https://register.enantra.org/day1" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-    </div>
-  </div>
-</div>
-
-<div id="ckr" class="overlay">
-  <div class="popup">
-    <img class="sp-img" src="img/ckr.jpg" width="150px">
-    <h2>C. K. Ranganathan</h2>
-    <a class="close" href="#sixdegree">&times;</a>
-    <div class="content">
-      <p>Chinni Krishnan Ranganathan is the man who's shown the world that a single standalone can beat the MNC's in one of
-        the most difficult sector of fast moving consumer goods. CavinKare is a contemporary success with its innovative
-        products that combine the best of nature and technology. His philanthropic deeds are mostly directed toward the education
-        sector. Success stories like his show us the results of dedication and perseverance.</p>
-      <a href="https://register.enantra.org/day1" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-    </div>
-  </div>
-</div>
-
-
-<div id="annadurai" class="overlay">
-  <div class="popup">
-    <img class="sp-img" src="img/annadurai.jpg" width="150px">
-    <h2>Auto Annadurai</h2>
-    <a class="close" href="#sixdegree">&times;</a>
-    <div class="content">
-      <p>Auto Annadurai is a common share auto driver. His auto however, is loaded with everything we could ever dream of. Wifi,
-        charging ports, magazines, a Tv and a Samsung galaxy tablet. His story went viral and he is now an internet sensation.
-        It isn't just his auto that sets him apart what he symbolises through his services. He provides free services to
-        teachers and nurses. He is the image of true novelty and places customer satisfaction above all else.</p>
-      <a href="https://register.enantra.org/day2" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-    </div>
-
-  </div>
-</div>
-
-
-<div id="vikas" class="overlay">
-  <div class="popup">
-    <img class="sp-img" src="img/vikas.jpeg" width="150px">
-    <h2>Vikas Maplani</h2>
-    <a class="close" href="#sixdegree">&times;</a>
-    <div class="content">
-      <p>During the course of his journey at CommonFloor.com, Vikas has been part of several crucial aspects of establishing
-        the company, right from initial sales to campaign management, campaign execution to product road map and product
-        management. He is heading the Commonfloor Groups, a division of CommonFloor.com which is online apartment management
-        solution offering smarter solutions to cater to various needs related to living in a housing society, through a range
-        of technology product &amp; services over web and mobile app. He is also a recipient of the prestigious MIT-Technology
-        Review “Young Innovator of the year” award.
-      </p>
-      <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-    </div>
-  </div>
-</div>
-
-
-<div id="soon" class="overlay">
-  <div class="popup">
-    <img class="sp-img" src="img/soon.jpg" width="150px">
-    <h2>Mystery person</h2>
-    <a class="close" href="#sixdegree">&times;</a>
-    <div class="content">
-      <p>We'll soon be revealing who this mystery entrepreneur is. Keep coming back!</p>
-    </div>
-  </div>
-</div>
-
-<!--for mini events-->
-<div id="js-modal" class="overlay">
-  <div class="popup">
-    <div id="js-fill-title" class="pop-title"></div>
-    <a class="close" href="#mini-events">&times;</a>
-    <!--tabs-->
-    <div class="tabs">
-
-      <input type="radio" id="tab1" name="tab-control" checked>
-      <input type="radio" id="tab2" name="tab-control">
-      <input type="radio" id="tab3" name="tab-control">
-      <input type="radio" id="tab4" name="tab-control">
-      <ul>
-        <li title="Description"><label for="tab1" role="button"><span>DESCRIPTION</span></label></li>
-        <li title="Format"><label for="tab2" role="button"><span>FORMAT</span></label></li>
-        <li title="Rules"><label for="tab3" role="button"><span>RULES</span></label></li>
-        <li title="Contact"><label for="tab4" role="button"><span>CONTACT</span></label></li>
-      </ul>
-
-      <div class="slider">
-        <div class="indicator"></div>
+        <div class="social">
+          <a href="https://facebook.com/enantra" class="social-item">
+            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="https://blog.enantra.org" class="social-item">
+            <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <p> Developed by Enantra Tech &copy; Enantra 2016-17</p>
       </div>
-      <div id="js-fill-box" class="content">
+    </section>
+  </footer>
+
+  <!--modals for poping up-->
+  <div id="varun" class="overlay">
+    <div class="popup">
+      <img class="sp-img" src="img/varun.jpg" width="150px">
+      <h2>Varun Agarwal</h2>
+      <a class="close" href="#sixdegree">&times;</a>
+      <div class="content">
+        <p>Varun Agarwal is a first generation entrepreneur, film maker and author. Still in his twenties, he has three companies
+          to his credit. Co founder of AlmaMater- India's largest company for student merchandise, Varun Agarwal has been
+          featured on the cover of India Today. He is the epitome of progress and a true student hero. His success has inspired
+          thousands of student entrepreneurs. </p>
+        <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
       </div>
     </div>
-
   </div>
-</div>
 
-<div id="sw" class="overlay">
-  <div class="popup">
-    <h2>Startup Weekend</h2>
-    <a class="close" href="#mega-events">&times;</a>
-    <div class="content">
-      <p>Startup Weekend&#8482; is a 54-hour weekend event, during which groups of developers, business managers, startup enthusiasts,
-        marketing gurus, graphic artists and more pitch ideas for new startup companies, form teams around those ideas, and
-        work to develop a working prototype, demo, or presentation by Sunday evening.
-      </p>
-      <a href="https://sw.enantra.org"> Register here <span>&xrarr;</span> </a>
+  <div id="nagaraj" class="overlay">
+    <div class="popup">
+      <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150/v1484627722/speaker_mylandla.png">
+      <h2>Nagaraj Mylandla</h2>
+      <a class="close" href="#sixdegree">&times;</a>
+      <div class="content">
+        <p>Nagaraj V Mylandla is the Founder and Managing Director of FSS - Financial Software &amp; Systems, a global payments
+          technology and transactions processing leader headquartered in Chennai, India. Nagaraj, also known as the maverick
+          of the Indian Payment Industry, pioneered payment systems and solutions in India as early as 1991 by creating FSS.
+          The Indian banking Industry saw the dawn of a new era in payments driven by technology to serve the virgin Indian
+          market with a billion people. Today, his creation has taken giant strides in the international markets and transformed
+          into a global payments organisation. Nagaraj Mylandla is now all geared for disrupting the payment ecosystem with
+          future ready products and services for the mobile and digitally inclined consumers with focus on both retail and
+          wholesale segments.</p>
+        <a href="https://register.enantra.org/day2" class="btn btn-primary"> Buy tickets here <span>&xrarr;</span> </a>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="runway" class="overlay">
-  <div class="popup">
-    <h2>Runway</h2>
-    <a class="close" href="#mega-events">&times;</a>
-    <div class="content">
-      <p>It is an arena in which aspiring entrepreneur-contestants make business presentations to a panel of investors, who
-        then choose whether or not to invest in that particular startup.
-      </p>
-      <!--<a href="https://register.enantra.org/runway"> Apply now <span>&xrarr;</span> </a>-->
+  <div id="velumani" class="overlay">
+    <div class="popup">
+      <img class="sp-img" src="img/velumani.jpg" width="150px">
+      <h2>Dr. Velumani</h2>
+      <a class="close" href="#sixdegree">&times;</a>
+      <div class="content">
+        <p>Dr. Velumani is an Indian scientist turned entrepreneur. His success story is one that people look up to in awe.
+          From 3 lakhs to 3300 crores and 19 years of experience in the diagnostic business, his reputation as both scientist
+          and entrepreneur cannot be overshadowed. With multiple degrees and extensive field knowledge, he is the founder,
+          acting chairman and managing director of Thyrocare technologies.</p>
+        <a href="https://register.enantra.org/day2" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+      </div>
     </div>
   </div>
-</div>
-
-<div id="etainment" class="overlay">
-  <div class="popup">
-    <h2>Entre-tainment</h2>
-    <a class="close" href="#mega-events">&times;</a>
-    <div class="content">
-      <p>Ingeniously named, Entre-tainment is a high profile dinner setup for the sole purpose of providing a complacent atmosphere
-        wherein interaction with top business personnel, entrepreneurs and elite investors is provided.
-      </p>
+  <div id="sujayath" class="overlay">
+    <div class="popup">
+      <img class="sp-img" src="img/sujayath.jpg" width="150px">
+      <h2>Sujayath Ali</h2>
+      <a class="close" href="#sixdegree">&times;</a>
+      <div class="content">
+        <p>Voonik is 'the' online marketplace for women's fashion. Working on a 10,000 rule algorithm, Voonik is a grand success.
+          Co founder, Sujayath Ali is a dexterous software development engineer and an internet entrepreneur. He is the acting
+          CEO of Voonik and has innate qualities that enable him to sustain and develop a franchise in such an aggressive
+          market.
+        </p>
+        <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+      </div>
     </div>
   </div>
-</div>
-
-<div id="street" class="overlay">
-  <div class="popup">
-    <h2>Startup Street</h2>
-    <a class="close" href="#mega-events">&times;</a>
-    <div class="content">
-      <p>Startup street gathers the most artistic and dexterous startups along with executives of the C level from a couple
-        of corporate giants, government agencies, incubators, investors, student and technological companies from across
-        India. It features an enticing two day exhibition. Think tanks, adept entrepreneurs, canny investors and key policy
-        makers will all take part in this event.
-      </p>
+  <div id="kk" class="overlay">
+    <div class="popup">
+      <img class="sp-img" src="img/kk.jpg" width="150px">
+      <h2>Karthik Kumar</h2>
+      <a class="close" href="#sixdegree">&times;</a>
+      <div class="content">
+        <p>Karthik Kumar is our humour guru. He is an actor and a stand up comedian who's shows are most looked forward to.
+          While all of us are trapped in this rat race, Mr. Karthik chose his career line in one swift audacious move. Following
+          his heart, he took up the mantle of livening our boring lives.</p>
+        <a href="https://register.enantra.org/day1" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="talks" class="overlay">
-  <div class="popup">
-    <h2>Six Degree</h2>
-    <a class="close" href="#mega-events">&times;</a>
-    <div class="content">
-      <p>It is an arena in which aspiring entrepreneur-contestants make business presentations to a panel of investors, who
-        then choose whether or not to invest in that particular startup.
-      </p>
+  <div id="ckr" class="overlay">
+    <div class="popup">
+      <img class="sp-img" src="img/ckr.jpg" width="150px">
+      <h2>C. K. Ranganathan</h2>
+      <a class="close" href="#sixdegree">&times;</a>
+      <div class="content">
+        <p>Chinni Krishnan Ranganathan is the man who's shown the world that a single standalone can beat the MNC's in one of
+          the most difficult sector of fast moving consumer goods. CavinKare is a contemporary success with its innovative
+          products that combine the best of nature and technology. His philanthropic deeds are mostly directed toward the
+          education sector. Success stories like his show us the results of dedication and perseverance.</p>
+        <a href="https://register.enantra.org/day1" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="soon-e" class="overlay">
-  <div class="popup">
-    <h2>Will be updated soon!</h2>
-    <a class="close" href="#mega-events">&times;</a>
-    <div class="content">
-      <p>Will be updated soon! Keep coming back!
-      </p>
+
+  <div id="annadurai" class="overlay">
+    <div class="popup">
+      <img class="sp-img" src="img/annadurai.jpg" width="150px">
+      <h2>Auto Annadurai</h2>
+      <a class="close" href="#sixdegree">&times;</a>
+      <div class="content">
+        <p>Auto Annadurai is a common share auto driver. His auto however, is loaded with everything we could ever dream of.
+          Wifi, charging ports, magazines, a Tv and a Samsung galaxy tablet. His story went viral and he is now an internet
+          sensation. It isn't just his auto that sets him apart what he symbolises through his services. He provides free
+          services to teachers and nurses. He is the image of true novelty and places customer satisfaction above all else.</p>
+        <a href="https://register.enantra.org/day2" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+      </div>
+
     </div>
   </div>
-</div>
 
-<div id="stock-market" class="overlay">
-  <div class="popup">
-    <h2>Stock Market</h2>
-    <a class="close" href="#workshop">&times;</a>
-    <div class="content">
-      <p>
-        The stock market is an everyday term that is used to describe a place where stocks and bonds are "traded"- that is bought
-        and sold. The topic of investment naturally brings along with it the mention of stocks.The goals of this exercise
-        is to buy the stock, hold it for a time, and then sell the stock for more than what was paid for it. This workshop
-        aims to teach all the nuances involved in stock marketing .It will indeed make you a master of all " trades"!
-      </p>
-      <a href="https://register.enantra.org/stocks"> Register here <span>&xrarr;</span> </a>
+
+  <div id="vikas" class="overlay">
+    <div class="popup">
+      <img class="sp-img" src="img/vikas.jpeg" width="150px">
+      <h2>Vikas Maplani</h2>
+      <a class="close" href="#sixdegree">&times;</a>
+      <div class="content">
+        <p>During the course of his journey at CommonFloor.com, Vikas has been part of several crucial aspects of establishing
+          the company, right from initial sales to campaign management, campaign execution to product road map and product
+          management. He is heading the Commonfloor Groups, a division of CommonFloor.com which is online apartment management
+          solution offering smarter solutions to cater to various needs related to living in a housing society, through a
+          range of technology product &amp; services over web and mobile app. He is also a recipient of the prestigious MIT-Technology
+          Review “Young Innovator of the year” award.
+        </p>
+        <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="how-strtup" class="overlay">
-  <div class="popup">
-    <h2>How to build a startup</h2>
-    <a class="close" href="#workshop">&times;</a>
-    <div class="content">
-      <p>
-        Description: This event is a one-step solution for all your apprehensions regarding the concept of a startup. It will walk
-        you through basic concepts which forms an idea of a startup like formulating the ultimate goal, knowing the potentiality
-        of the market,identifying competitors and setting the perfect plan for your scheme! In short, you will understand
-        all the "know-hows" that goes behind a startup
-      </p>
-      <p>
-        Criteria: An innovative idea coupled with your fervour to take it to the masses!
-      </p>
-      <a href="https://register.enantra.org/startup"> Register here <span>&xrarr;</span> </a>
+
+  <div id="soon" class="overlay">
+    <div class="popup">
+      <img class="sp-img" src="img/soon.jpg" width="150px">
+      <h2>Mystery person</h2>
+      <a class="close" href="#sixdegree">&times;</a>
+      <div class="content">
+        <p>We'll soon be revealing who this mystery entrepreneur is. Keep coming back!</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="growth-hack" class="overlay">
-  <div class="popup">
-    <h2>Growth Hacking</h2>
-    <a class="close" href="#workshop">&times;</a>
-    <div class="content">
-      <p>
-        What is growth hacking? Is it an alternative to marketing? Is it just a buzzword? Is it even legal?
-      </p>
-      <p>
-        In this workshop we will explore why Growth Hacking has become so popular - and just exactly what it entails. We'll look
-        at a variety of different growth hacks that utilise data, technology and behavioural science across all stages in
-        the customer lifecycle, and we’ll learn how a number of highly successful startups growth hacked their way to success.
-        This workshop will also teach you how to create a structured framework that helps you to apply these techniques on
-        the areas that will make the biggest difference to your business.</p>
-      <ul>
-        <li>In this workshop, students will learn:</li>
-        <li>growth hacking and its origins</li>
-        <li>hacks to use at different points in the customer cycle, and also about the tools which help boost their efforts</li>
-        <li>how to create and apply the growth Hacking cycle and funnel</li>
-        <li>what 3rd party tools to use and when</li>
-        <li>how to plan and execute speedy testing to optimise growth</li>
-      </ul>
+  <!--for mini events-->
+  <div id="js-modal" class="overlay">
+    <div class="popup">
+      <div id="js-fill-title" class="pop-title"></div>
+      <a class="close" href="#mini-events">&times;</a>
+      <!--tabs-->
+      <div class="tabs">
 
-      <h4>Prereqs &amp; Preparation</h4>
-      <p>
-        This is a beginner class for people interested in finding out more about growth hacking and how it might be relevant to their
-        business. An understanding of the importance of data is useful, but no coding skills are necessary.
-      </p>
-      <a href="https://register.enantra.org/growth"> Register here <span>&xrarr;</span> </a>
+        <input type="radio" id="tab1" name="tab-control" checked>
+        <input type="radio" id="tab2" name="tab-control">
+        <input type="radio" id="tab3" name="tab-control">
+        <input type="radio" id="tab4" name="tab-control">
+        <ul>
+          <li title="Description"><label for="tab1" role="button"><span>DESCRIPTION</span></label></li>
+          <li title="Format"><label for="tab2" role="button"><span>FORMAT</span></label></li>
+          <li title="Rules"><label for="tab3" role="button"><span>RULES</span></label></li>
+          <li title="Contact"><label for="tab4" role="button"><span>CONTACT</span></label></li>
+        </ul>
+
+        <div class="slider">
+          <div class="indicator"></div>
+        </div>
+        <div id="js-fill-box" class="content">
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
 
-<div id="e-kids" class="overlay">
-  <div class="popup">
-    <h2>Entrepreneurship for Kids</h2>
-    <a class="close" href="#workshop">&times;</a>
-    <div class="content">
-      <p>Hey kids! Do you dream to be a successful entrepreneur? Want to manage staffs, meet celebrities and be moguls in the
-        making?
-      </p>
-      <p>How is it like to teach kids the real experience of a sound business management?</p>
-      <p>Entrepreneurship for kids, an initiative of Enantra 2k17 sets an amazing platform for school students to engage, experiment
-        and develop their entrepreneurial spirit towards becoming a successful KIDpreneur.</p>
-      <a href="https://register.enantra.org/kids"> Register here <span>&xrarr;</span> </a>
+  <div id="sw" class="overlay">
+    <div class="popup">
+      <h2>Startup Weekend</h2>
+      <a class="close" href="#mega-events">&times;</a>
+      <div class="content">
+        <p>Startup Weekend&#8482; is a 54-hour weekend event, during which groups of developers, business managers, startup
+          enthusiasts, marketing gurus, graphic artists and more pitch ideas for new startup companies, form teams around
+          those ideas, and work to develop a working prototype, demo, or presentation by Sunday evening.
+        </p>
+        <a href="https://sw.enantra.org"> Register here <span>&xrarr;</span> </a>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="e-disabled" class="overlay">
-  <div class="popup">
-    <h2>Entrepreneurship for Differently abled</h2>
-    <a class="close" href="#workshop">&times;</a>
-    <div class="content">
-      <p><i>Towards transforming the specials to unique in Combating the national challenges with challenged.</i></p>
-      <p>An entrepreneurial workshop for differenly, a social initiative of ENANTRA 2k17, with a singular moto of instilling
-        a thought of ‘YOU CAN DO IT’</p>
-      <a href="https://register.enantra.org/abled"> Register here <span>&xrarr;</span> </a>
+  <div id="runway" class="overlay">
+    <div class="popup">
+      <h2>Runway</h2>
+      <a class="close" href="#mega-events">&times;</a>
+      <div class="content">
+        <p>It is an arena in which aspiring entrepreneur-contestants make business presentations to a panel of investors, who
+          then choose whether or not to invest in that particular startup.
+        </p>
+        <!--<a href="https://register.enantra.org/runway"> Apply now <span>&xrarr;</span> </a>-->
+      </div>
     </div>
   </div>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
-<script src="js/enantra.js"></script>
+  <div id="etainment" class="overlay">
+    <div class="popup">
+      <h2>Entre-tainment</h2>
+      <a class="close" href="#mega-events">&times;</a>
+      <div class="content">
+        <p>Entre-tainment is a high profile dinner setup for the sole purpose of providing a complacent atmosphere
+          wherein interaction with top business personnel, entrepreneurs and elite investors is provided.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="street" class="overlay">
+    <div class="popup">
+      <h2>Startup Street</h2>
+      <a class="close" href="#mega-events">&times;</a>
+      <div class="content">
+        <p>Startup street gathers the most artistic and dexterous startups along with executives of the C level from a couple
+          of corporate giants, government agencies, incubators, investors, student and technological companies from across
+          India. It features an enticing two day exhibition. Think tanks, adept entrepreneurs, canny investors and key policy
+          makers will all take part in this event.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="talks" class="overlay">
+    <div class="popup">
+      <h2>Six Degree</h2>
+      <a class="close" href="#mega-events">&times;</a>
+      <div class="content">
+        <p>It is an arena in which aspiring entrepreneur-contestants make business presentations to a panel of investors, who
+          then choose whether or not to invest in that particular startup.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="soon-e" class="overlay">
+    <div class="popup">
+      <h2>Will be updated soon!</h2>
+      <a class="close" href="#mega-events">&times;</a>
+      <div class="content">
+        <p>Will be updated soon! Keep coming back!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="stock-market" class="overlay">
+    <div class="popup">
+      <h2>Stock Market</h2>
+      <a class="close" href="#workshop">&times;</a>
+      <div class="content">
+        <p>
+          The stock market is an everyday term that is used to describe a place where stocks and bonds are "traded"- that is bought
+          and sold. The topic of investment naturally brings along with it the mention of stocks.The goals of this exercise
+          is to buy the stock, hold it for a time, and then sell the stock for more than what was paid for it. This workshop
+          aims to teach all the nuances involved in stock marketing .It will indeed make you a master of all " trades"!
+        </p>
+        <a href="https://register.enantra.org/workshop"> Register here <span>&xrarr;</span> </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="how-strtup" class="overlay">
+    <div class="popup">
+      <h2>How to build a startup</h2>
+      <a class="close" href="#workshop">&times;</a>
+      <div class="content">
+        <p>
+          Description: This event is a one-step solution for all your apprehensions regarding the concept of a startup. It will walk
+          you through basic concepts which forms an idea of a startup like formulating the ultimate goal, knowing the potentiality
+          of the market,identifying competitors and setting the perfect plan for your scheme! In short, you will understand
+          all the "know-hows" that goes behind a startup
+        </p>
+        <p>
+          Criteria: An innovative idea coupled with your fervour to take it to the masses!
+        </p>
+        <a href="https://register.enantra.org/workshop"> Register here <span>&xrarr;</span> </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="growth-hack" class="overlay">
+    <div class="popup">
+      <h2>Growth Hacking</h2>
+      <a class="close" href="#workshop">&times;</a>
+      <div class="content">
+        <p>
+          What is growth hacking? Is it an alternative to marketing? Is it just a buzzword? Is it even legal?
+        </p>
+        <p>
+          In this workshop we will explore why Growth Hacking has become so popular - and just exactly what it entails. We'll look
+          at a variety of different growth hacks that utilise data, technology and behavioural science across all stages
+          in the customer lifecycle, and we’ll learn how a number of highly successful startups growth hacked their way to
+          success. This workshop will also teach you how to create a structured framework that helps you to apply these techniques
+          on the areas that will make the biggest difference to your business.</p>
+        <ul>
+          <li>In this workshop, students will learn:</li>
+          <li>growth hacking and its origins</li>
+          <li>hacks to use at different points in the customer cycle, and also about the tools which help boost their efforts</li>
+          <li>how to create and apply the growth Hacking cycle and funnel</li>
+          <li>what 3rd party tools to use and when</li>
+          <li>how to plan and execute speedy testing to optimise growth</li>
+        </ul>
+
+        <h4>Prereqs &amp; Preparation</h4>
+        <p>
+          This is a beginner class for people interested in finding out more about growth hacking and how it might be relevant to their
+          business. An understanding of the importance of data is useful, but no coding skills are necessary.
+        </p>
+        <a href="https://register.enantra.org/workshop"> Register here <span>&xrarr;</span> </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="e-kids" class="overlay">
+    <div class="popup">
+      <h2>Entrepreneurship for Kids</h2>
+      <a class="close" href="#workshop">&times;</a>
+      <div class="content">
+        <p>Hey kids! Do you dream to be a successful entrepreneur? Want to manage staffs, meet celebrities and be moguls in
+          the making?
+        </p>
+        <p>How is it like to teach kids the real experience of a sound business management?</p>
+        <p>Entrepreneurship for kids, an initiative of Enantra 2k17 sets an amazing platform for school students to engage,
+          experiment and develop their entrepreneurial spirit towards becoming a successful KIDpreneur.</p>
+        <a href="https://register.enantra.org/workshop"> Register here <span>&xrarr;</span> </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="e-disabled" class="overlay">
+    <div class="popup">
+      <h2>Entrepreneurship for Differently abled</h2>
+      <a class="close" href="#workshop">&times;</a>
+      <div class="content">
+        <p><i>Towards transforming the specials to unique in Combating the national challenges with challenged.</i></p>
+        <p>An entrepreneurial workshop for differenly, a social initiative of ENANTRA 2k17, with a singular moto of instilling
+          a thought of ‘YOU CAN DO IT’</p>
+        <a href="https://register.enantra.org/workshop"> Register here <span>&xrarr;</span> </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+  <script src="js/enantra.js"></script>
 
 </body>
 
