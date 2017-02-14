@@ -56,6 +56,14 @@ section.home {
   text-align: center;
 }
 
+.container.con {
+  flex-flow: row nowrap;
+}
+
+#mapouter {
+  padding-top: 10px;
+}
+
 #contact.container {
   left: 20px;
 }
