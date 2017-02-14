@@ -105,13 +105,11 @@
       fbq('track', 'PageView')
     </script>
     <noscript>
-      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=690735181101310&ev=PageView&noscript=1"
-      />
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=690735181101310&ev=PageView&noscript=1"/>
     </noscript>
   </head>
 
   <body>
-
     <section class="container-loader">
       <div id="loader">
         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="250" viewBox="0 0 250 250" width="250" version="1.1">
@@ -164,7 +162,6 @@
             <li><a href="#workshop">Workshops</a></li>
             <li><a href="#ebm">Enantra Brand Manager</a></li>
             <li><a href="#partners">Partners</a></li>
-            <!--<li><a href="#agenda">Schedule</a></li>-->
             <li><a href="#home">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
@@ -191,7 +188,7 @@
           <div class="container">
             <div class="short-des">
               <p>
-                CEG, AU presents to you Enantra, an au courant management fest. Enantra is a colossal fest with six mega events like Investors
+                Anna University presents to you Enantra, an au courant management fest. Enantra is a colossal fest with six mega events like Investors
                 Tank, Startup street, Google StartUp Weekend, Entrepreneur Networking Dinner, Startup Awards and extra bonuses.
                 Enantra is South India’s Biggest Entrepreneurship Festival, first of its kind inviting start-ups, entrepreneurs,
                 mentors and investors from all over India and around the world with 600+ colleges under our wing to participate.
@@ -248,24 +245,24 @@
       </div>
       <div class="events-list box">
         <div class="event-row box">
-          <a class="js-popup" href="#strategy" data-event="strategy"><img class="event" src="img/MEDD.png" width="200px" />
+          <a class="js-popup" href="#js-modal" data-event="strategy"><img class="event" src="img/MEDD.png" width="200px" />
             <div class="event-name">Strategy Master</div>
           </a>
-          <a class="js-popup" href="#idol" data-event="idol"><img class="event" src="img/MEEI.png" width="200px" />
+          <a class="js-popup" href="#js-modal" data-event="idol"><img class="event" src="img/MEEI.png" width="200px" />
             <div class="event-name">E-idol</div>
           </a>
-          <a class="js-popup" href="#marathon" data-event="marathon"><img class="event" src="img/MEDM.png" width="200px" />
+          <a class="js-popup" href="#js-modal" data-event="marathon"><img class="event" src="img/MEDM.png" width="200px" />
             <div class="event-name">Marketing Marathon</div>
           </a>
         </div>
         <div class="event-row box">
-          <a class="js-popup" href="#grandmaster" data-event="grandmaster"><img class="event" src="img/MEGM.png" width="200px" />
+          <a class="js-popup" href="#js-modal" data-event="grandmaster"><img class="event" src="img/MEGM.png" width="200px" />
             <div class="event-name">Grandmaster</div>
           </a>
-          <a class="js-popup" href="#quiz" data-event="quiz"><img class="event" src="img/meq.png" width="200px" />
+          <a class="js-popup" href="#js-modal" data-event="quiz"><img class="event" src="img/meq.png" width="200px" />
             <div class="event-name">Quiz</div>
           </a>
-          <a class="js-popup" href="#spin" data-event="spin"><img class="event" src="img/mestw.png" width="200px" />
+          <a class="js-popup" href="#js-modal" data-event="spin"><img class="event" src="img/mestw.png" width="200px" />
             <div class="event-name">Spin</div>
           </a>
         </div>
@@ -309,7 +306,6 @@
       </div>
     </section>
 
-    <!--workshops-->
     <section id="workshop">
       <div class="speakers-title">
         <h3>
@@ -349,35 +345,6 @@
       </div>
     </section>
 
-    <!--<section id="agenda" class="box">
-  <div id="main">
-    <section id="schedule">
-      <header id="day">Day 1 &mdash; Jan 19</header>
-    </section>
-  </div>
-  <div id="aside">
-    <div class="clock">
-      <h3 id="time">00:00</h3>
-    </div>
-    <div class="control">
-      <header class="box">
-        <div>
-          <b>Travel through time</b> <br/> You can slide the bar below to adjust the time
-        </div>
-      </header>
-      <div>
-        <p><input type="range" min="0" max="23.9" step="0.1" value="" id="traveler" /></p>
-        <ul>
-          <li><button id="day1" class="btn inverse">Day 1</button></li>
-          <li><button id="day2" class="btn inverse">Day 2</button></li>
-          <li><button id="day3" class="btn inverse">Day 3</button></li>
-          <li><button id="day4" class="btn inverse">Day 4</button></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>-->
-
     <!--footer-->
     <footer>
       <section id="contact">
@@ -392,8 +359,29 @@
           <div class="con-phone">
             Naghma +91 96000 18978
             <br> Susheel +91 97907 79717
+            <br>
           </div>
-
+          <br>
+          <div id="mapouter" class="center">
+            <div id="gmap_canvas">
+              <iframe width="700" height="300" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=Anna University, Guindy, Chennai, Tamil Nadu, India, &t=&z=15&ie=UTF8&iwloc=&output=embed"
+                marginwidth="0">
+                </iframe>
+                <a class="addmaps" href="http://www.embedgooglemap.net" id="get-map-data">embedgooglemap.net</a>
+            </div>
+            <style>
+              #gmap_canvas {
+                height: 300px;
+                width: 700px;
+              }
+              
+              #mapouter {
+                overflow: hidden;
+                height: 300px;
+                width: 700px;
+              }
+            </style>
+          </div>
           <div class="social">
             <a href="https://facebook.com/enantra" class="social-item">
               <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
@@ -402,7 +390,7 @@
               <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
             </a>
           </div>
-          <p> Developed by Enantra Tech &copy; Enantra 2016-17</p>
+          <p> Developed by Enantra Tech &copy; Enantra 2016-17.</p>
         </div>
       </section>
     </footer>
@@ -506,7 +494,6 @@
         <a class="close" href="#mini-events">&times;</a>
         <!--tabs-->
         <div class="tabs">
-
           <input type="radio" id="tab1" name="tab-control" checked>
           <input type="radio" id="tab2" name="tab-control">
           <input type="radio" id="tab3" name="tab-control">
@@ -517,14 +504,12 @@
             <li title="Rules"><label for="tab3" role="button"><span>RULES</span></label></li>
             <li title="Contact"><label for="tab4" role="button"><span>CONTACT</span></label></li>
           </ul>
-
           <div class="slider">
             <div class="indicator"></div>
           </div>
           <div id="js-fill-box" class="content">
           </div>
         </div>
-
       </div>
     </div>
 
@@ -692,25 +677,22 @@
     </div>
 
     <script>
-        (function (w) {
+        (function (d) {
           var loadCSS = function (href) {
-            var doc = w.document
-            var ss = doc.createElement("link")
-            var refs = doc.body.childNodes
+            var ss = d.createElement("link")
+            var refs = d.body.childNodes
             var ref = refs[refs.length - 1]
-            var sheets = doc.styleSheets
             ss.rel = "stylesheet"
             ss.href = href
             ss.media = "all"
             ref.parentNode.insertBefore(ss, ref.nextSibling)
-            return ss
           }
           loadCSS('css/style.css')
           loadCSS('https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css')
           setTimeout(function () {
             document.getElementsByClassName('container-loader')[0].remove()
           }, 500)
-        } (typeof global !== "undefined" ? global : this))
+        }(document))
     </script>
     <script async src="js/enantra.js"></script>
   </body>
