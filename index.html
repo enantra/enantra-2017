@@ -19,12 +19,12 @@
         overflow-x: hidden;
         font-family: 'Lato', Helvetica, sans-serif;
       }
-
+      
       section {
         width: 100%;
         height: 100%;
       }
-
+      
       .container-loader {
         background: #fff;
         text-align: center;
@@ -36,7 +36,7 @@
         z-index: 999;
         transition: opacity 1s ease-in-out;
       }
-
+      
       .container-hide {
         opacity: 0;
         width: 0;
@@ -45,11 +45,11 @@
         visibility: hidden;
         display: none;
       }
-
+      
       #loader svg {
         animation: draw 5000ms linear infinite;
       }
-
+      
       @keyframes draw {
         0% {
           stroke-dasharray: 1500;
@@ -82,6 +82,12 @@
         }
       }
     </style>
+    <script>
+      if (/Android|webOS|Mobile|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        // Take the user to a different screen here.
+        location.replace('./index.mob.html');
+      }
+    </script>
     <script>
       !function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
@@ -174,7 +180,8 @@
       <div class="panes">
         <div class="half left">
           <div class="container">
-            <img class="logo" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_500/v1487593296/logo_whiteinshorts.png" alt="Enantra'17"/>
+            <img class="logo" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_500/v1487593296/logo_whiteinshorts.png"
+              alt="Enantra'17" />
             <div class="sponsors">
               <img src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_450/v1486996304/patronage.png" alt="make in india">
             </div>
@@ -281,46 +288,55 @@
       </div>
       <div class="speaker-list box">
         <div class="speaker-row box">
-          <a href="#varun"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487314694/speaker_varun.jpg" width="200px" />
+          <a href="#varun"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487314694/speaker_varun.jpg"
+              width="200px" />
             <div class="speaker-name">Varun Agarwal</div>
-<!--            <div class="speaker-pos">CEO and Author</div> -->
+            <!--            <div class="speaker-pos">CEO and Author</div> -->
           </a>
-          <a href="#ckk"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487315117/speaker_ckk.jpg" width="200px" />
+          <a href="#ckk"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487315117/speaker_ckk.jpg"
+              width="200px" />
             <div class="speaker-name">C.K.KUMARAVEL</div>
-<!--            <div class="speaker-pos">CEO and Author</div> -->
+            <!--            <div class="speaker-pos">CEO and Author</div> -->
           </a>
-          <a href="#kiruba"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487315219/speaker_kiruba.png" width="200px" />
+          <a href="#kiruba"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487315219/speaker_kiruba.png"
+              width="200px" />
             <div class="speaker-name">KIRUBA SHANKAR</div>
-<!--            <div class="speaker-pos">CEO and Author</div> -->
+            <!--            <div class="speaker-pos">CEO and Author</div> -->
           </a>
-          <a href="#kk"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487318545/speaker_karthik.jpg" width="200px" />
+          <a href="#kk"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487318545/speaker_karthik.jpg"
+              width="200px" />
             <div class="speaker-name">Karthik Kumar</div>
-<!--            <div class="speaker-pos">Co-founder, Actor and Stand-up Artist</div> -->
+            <!--            <div class="speaker-pos">Co-founder, Actor and Stand-up Artist</div> -->
           </a>
         </div>
         <div class="speaker-row box">
-          <a href="#auto"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487347412/speaker_auto.jpg" width="200px" />
+          <a href="#auto"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487347412/speaker_auto.jpg"
+              width="200px" />
             <div class="speaker-name">Annadurai</div>
-<!--            <div class="speaker-pos">CEO and Author</div> -->
+            <!--            <div class="speaker-pos">CEO and Author</div> -->
           </a>
-          <a href="#aadhi"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487318683/speaker_hiphop.jpg" width="200px" />
+          <a href="#aadhi"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487318683/speaker_hiphop.jpg"
+              width="200px" />
             <div class="speaker-name">Hiphop Aadhi</div>
-<!--            <div class="speaker-pos">CEO and Author</div> -->
+            <!--            <div class="speaker-pos">CEO and Author</div> -->
           </a>
-          <a href="#kavipriya"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487314567/speaker_kavipriya.jpg" width="200px" />
+          <a href="#kavipriya"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487314567/speaker_kavipriya.jpg"
+              width="200px" />
             <div class="speaker-name">Kavipriya Anand</div>
-<!--            <div class="speaker-pos">CEO and Author</div> -->
+            <!--            <div class="speaker-pos">CEO and Author</div> -->
           </a>
-          <a href="#vikas"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487318819/speaker_vikas.jpg" width="200px" />
+          <a href="#vikas"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487318819/speaker_vikas.jpg"
+              width="200px" />
             <div class="speaker-name">vikas Malpani</div>
-<!--            <div class="speaker-pos">Co-founder, Actor and Stand-up Artist</div> -->
+            <!--            <div class="speaker-pos">Co-founder, Actor and Stand-up Artist</div> -->
           </a>
-          <a href="#naveen"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487319230/speaker_naveen.jpg" width="200px" />
+          <a href="#naveen"><img class="speaker" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487319230/speaker_naveen.jpg"
+              width="200px" />
             <div class="speaker-name">Naveen Valsakumar</div>
-<!--            <div class="speaker-pos">Co-founder, Actor and Stand-up Artist</div> -->
+            <!--            <div class="speaker-pos">Co-founder, Actor and Stand-up Artist</div> -->
           </a>
         </div>
-       </div>
+      </div>
       </div>
     </section>
 
@@ -339,7 +355,7 @@
           <a href="#e-kids"><img class="event" src="https://res.cloudinary.com/enantra/image/upload/f_auto/v1483848428/WSDM.png" />
             <div class="event-name">Entrepreneurship for kids</div>
           </a>
-        <!--</div>
+          <!--</div>
         <div class="event-row box bottom-row">-->
           <a href="#growth-hack"><img class="event" src="img/WSGH.png" width="200px" />
             <div class="event-name">Growth Hacking</div>
@@ -393,7 +409,7 @@
                 height: 300px;
                 width: 700px;
               }
-
+              
               #mapouter {
                 overflow: hidden;
                 height: 300px;
@@ -421,133 +437,152 @@
     <!--modals for poping up-->
     <div id="varun" class="overlay">
       <div class="popup">
-        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487314694/speaker_varun.jpg" width="150px">
-        <h2>Varun Agarwal</h2>
-        <a class="close" href="#sixdegree">&times;</a>
-        <div class="content">
-          <p>Varun Agarwal is a first generation entrepreneur, film maker and author. Still in his twenties, he has three companies
-            to his credit. Co founder of AlmaMater- India's largest company for student merchandise, Varun Agarwal has been
-            featured on the cover of India Today. He is the epitome of progress and a true student hero. His success has
-            inspired thousands of student entrepreneurs. </p>
-          <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-        </div>
+        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487314694/speaker_varun.jpg"
+          width="150px">
+          <h2>Varun Agarwal</h2>
+          <a class="close" href="#sixdegree">&times;</a>
+          <div class="content">
+            <p>Varun Agarwal is a first generation entrepreneur, film maker and author. Still in his twenties, he has three
+              companies to his credit. Co founder of AlmaMater- India's largest company for student merchandise, Varun Agarwal
+              has been featured on the cover of India Today. He is the epitome of progress and a true student hero. His success
+              has inspired thousands of student entrepreneurs. </p>
+            <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+          </div>
       </div>
     </div>
 
     <div id="ckk" class="overlay">
       <div class="popup">
-        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487315117/speaker_ckk.jpg" width="150px">
-        <h2>C.K.KUMARAVEL</h2>
-        <a class="close" href="#sixdegree">&times;</a>
-        <div class="content">
-          <p>Taking care, the Naturals way<br>
-The man behind Naturals, is a humble and unique individual whose vision involves expanding the female entrepreneur base. He actively works toward the welfare and development of female entrepreneurs and strives toward eradicating unemployment. </p>
-          <a href="https://register.enantra.org/day2" class="btn btn-primary"> Buy tickets here <span>&xrarr;</span> </a>
-        </div>
+        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487315117/speaker_ckk.jpg"
+          width="150px">
+          <h2>C.K.KUMARAVEL</h2>
+          <a class="close" href="#sixdegree">&times;</a>
+          <div class="content">
+            <p>Taking care, the Naturals way<br> The man behind Naturals, is a humble and unique individual whose vision involves
+              expanding the female entrepreneur base. He actively works toward the welfare and development of female entrepreneurs
+              and strives toward eradicating unemployment. </p>
+            <a href="https://register.enantra.org/day2" class="btn btn-primary"> Buy tickets here <span>&xrarr;</span> </a>
+          </div>
       </div>
     </div>
     <div id="kk" class="overlay">
       <div class="popup">
-        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487318545/speaker_karthik.jpg" width="150px">
-        <h2>Karthik Kumar</h2>
-        <a class="close" href="#sixdegree">&times;</a>
-        <div class="content">
-          <p>Karthik Kumar is our humour guru. He is an actor and a stand up comedian who's shows are most looked forward to.
-            While all of us are trapped in this rat race, Mr. Karthik chose his career line in one swift audacious move.
-            Following his heart, he took up the mantle of livening our boring lives.</p>
-          <a href="https://register.enantra.org/day1" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-        </div>
+        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_200,f_auto/v1487318545/speaker_karthik.jpg"
+          width="150px">
+          <h2>Karthik Kumar</h2>
+          <a class="close" href="#sixdegree">&times;</a>
+          <div class="content">
+            <p>Karthik Kumar is our humour guru. He is an actor and a stand up comedian who's shows are most looked forward
+              to. While all of us are trapped in this rat race, Mr. Karthik chose his career line in one swift audacious
+              move. Following his heart, he took up the mantle of livening our boring lives.</p>
+            <a href="https://register.enantra.org/day1" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+          </div>
       </div>
     </div>
 
     <div id="auto" class="overlay">
       <div class="popup">
-        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487347412/speaker_auto.jpg" width="150px">
-        <h2>Auto Annadurai</h2>
-        <a class="close" href="#sixdegree">&times;</a>
-        <div class="content">
-          <p>Auto Annadurai is a common share auto driver. His auto however, is loaded with everything we could ever dream of.
-            Wifi, charging ports, magazines, a Tv and a Samsung galaxy tablet. His story went viral and he is now an internet
-            sensation. It isn't just his auto that sets him apart what he symbolises through his services. He provides free
-            services to teachers and nurses. He is the image of true novelty and places customer satisfaction above all else.</p>
-          <a href="https://register.enantra.org/day2" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-        </div>
+        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487347412/speaker_auto.jpg"
+          width="150px">
+          <h2>Auto Annadurai</h2>
+          <a class="close" href="#sixdegree">&times;</a>
+          <div class="content">
+            <p>Auto Annadurai is a common share auto driver. His auto however, is loaded with everything we could ever dream
+              of. Wifi, charging ports, magazines, a Tv and a Samsung galaxy tablet. His story went viral and he is now an
+              internet sensation. It isn't just his auto that sets him apart what he symbolises through his services. He
+              provides free services to teachers and nurses. He is the image of true novelty and places customer satisfaction
+              above all else.</p>
+            <a href="https://register.enantra.org/day2" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+          </div>
       </div>
     </div>
 
     <div id="vikas" class="overlay">
       <div class="popup">
-        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487318819/speaker_vikas.jpg" width="150px">
-        <h2>Vikas Maplani</h2>
-        <a class="close" href="#sixdegree">&times;</a>
-        <div class="content">
-          <p>During the course of his journey at CommonFloor.com, Vikas has been part of several crucial aspects of establishing
-            the company, right from initial sales to campaign management, campaign execution to product road map and product
-            management. He is heading the Commonfloor Groups, a division of CommonFloor.com which is online apartment management
-            solution offering smarter solutions to cater to various needs related to living in a housing society, through
-            a range of technology product &amp; services over web and mobile app. He is also a recipient of the prestigious
-            MIT-Technology Review “Young Innovator of the year” award.
-          </p>
-          <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-        </div>
+        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487318819/speaker_vikas.jpg"
+          width="150px">
+          <h2>Vikas Maplani</h2>
+          <a class="close" href="#sixdegree">&times;</a>
+          <div class="content">
+            <p>During the course of his journey at CommonFloor.com, Vikas has been part of several crucial aspects of establishing
+              the company, right from initial sales to campaign management, campaign execution to product road map and product
+              management. He is heading the Commonfloor Groups, a division of CommonFloor.com which is online apartment management
+              solution offering smarter solutions to cater to various needs related to living in a housing society, through
+              a range of technology product &amp; services over web and mobile app. He is also a recipient of the prestigious
+              MIT-Technology Review “Young Innovator of the year” award.
+            </p>
+            <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+          </div>
       </div>
     </div>
 
     <div id="kiruba" class="overlay">
       <div class="popup">
-        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487315219/speaker_kiruba.png" width="150px">
-        <h2>Kiruba Shankar</h2>
-        <a class="close" href="#sixdegree">&times;</a>
-        <div class="content">
-          <p>To any entrepreneur: if you want to do it, do it now. If you don’t, you’re going to regret it.<br>
-
-Kiruba Shankar, from a farmer to an established entrepreneur, stories of his perseverance whilst scaling towering heights never gets old. He is the CEO of Business Blogging and the Founder Director of F5ive Technologies. He has also authored five books and technology columns for several newspapers.
-          </p>
-          <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-        </div>
+        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487315219/speaker_kiruba.png"
+          width="150px">
+          <h2>Kiruba Shankar</h2>
+          <a class="close" href="#sixdegree">&times;</a>
+          <div class="content">
+            <p>To any entrepreneur: if you want to do it, do it now. If you don’t, you’re going to regret it.<br> Kiruba Shankar,
+              from a farmer to an established entrepreneur, stories of his perseverance whilst scaling towering heights never
+              gets old. He is the CEO of Business Blogging and the Founder Director of F5ive Technologies. He has also authored
+              five books and technology columns for several newspapers.
+            </p>
+            <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+          </div>
       </div>
     </div>
 
     <div id="aadhi" class="overlay">
       <div class="popup">
-        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487318683/speaker_hiphop.jpg" width="150px">
-        <h2>Hiphop Tamizha</h2>
-        <a class="close" href="#sixdegree">&times;</a>
-        <div class="content">
-          <p>English Pesnalum Tamizhan Da - HipHop Aadhi<br>
-
-Hiphop Tamizha is an Indian musical duo consisting of Adhithya "Adhi" Ramachandran Venkatapathy and R. Jeeva, based in Chennai, Tamil Nadu. Initially underground since their formation in 2005, the duo achieved wide recognition through their track "Club le Mabbu le." While the duo are primarily independent musicians, they have also contributed to numerous works outside independent music, such as composing and performing music for films.
-          </p>
-          <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-        </div>
+        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487318683/speaker_hiphop.jpg"
+          width="150px">
+          <h2>Hiphop Tamizha</h2>
+          <a class="close" href="#sixdegree">&times;</a>
+          <div class="content">
+            <p>English Pesnalum Tamizhan Da - HipHop Aadhi<br> Hiphop Tamizha is an Indian musical duo consisting of Adhithya
+              "Adhi" Ramachandran Venkatapathy and R. Jeeva, based in Chennai, Tamil Nadu. Initially underground since their
+              formation in 2005, the duo achieved wide recognition through their track "Club le Mabbu le." While the duo
+              are primarily independent musicians, they have also contributed to numerous works outside independent music,
+              such as composing and performing music for films.
+            </p>
+            <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+          </div>
       </div>
     </div>
 
     <div id="kavipriya" class="overlay">
       <div class="popup">
-        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487314567/speaker_kavipriya.jpg" width="150px">
-        <h2>Kavipriya Anand</h2>
-        <a class="close" href="#sixdegree">&times;</a>
-        <div class="content">
-          <p>Adding smiles and touching millions of lives<br>
-Dancer, author-in-the-making, and humanitarian, Kavi Priya’s penchant for adding smiles has taken her a long way. Adding Smiles, which started out as an NGO, has now branched out. Also, a part of the organization is the Adding Smiles Consulting which deals with brand management and corporate communication, and an Art Gallery. “Happiness isn’t unreachable,” is her typical work motto.
-          </p>
-          <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-        </div>
+        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487314567/speaker_kavipriya.jpg"
+          width="150px">
+          <h2>Kavipriya Anand</h2>
+          <a class="close" href="#sixdegree">&times;</a>
+          <div class="content">
+            <p>Adding smiles and touching millions of lives<br> Dancer, author-in-the-making, and humanitarian, Kavi Priya’s
+              penchant for adding smiles has taken her a long way. Adding Smiles, which started out as an NGO, has now branched
+              out. Also, a part of the organization is the Adding Smiles Consulting which deals with brand management and
+              corporate communication, and an Art Gallery. “Happiness isn’t unreachable,” is her typical work motto.
+            </p>
+            <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+          </div>
       </div>
     </div>
 
     <div id="naveen" class="overlay">
       <div class="popup">
-        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487319230/speaker_naveen.jpg" width="150px">
-        <h2>Naveen Valsakumar</h2>
-        <a class="close" href="#sixdegree">&times;</a>
-        <div class="content">
-          <p>At heart, self-publishing is kind of like a bake sale. The end product does not need to resemble the one that comes from a commercial bakery, but it must taste good. No-one wants the lumpy under baked oatmeal cookies with spinach and alfalfa flavored chips.
-Around 2011, Naveen Valsakumar and Bhargava Adepalley, engineers by training, started toying with the idea of writing a book together. He is a former technologist and the successful co-founder of Notion Press.
-          </p>
-          <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
-        </div>
+        <img class="sp-img" src="https://res.cloudinary.com/enantra/image/upload/c_scale,w_150,f_auto/v1487319230/speaker_naveen.jpg"
+          width="150px">
+          <h2>Naveen Valsakumar</h2>
+          <a class="close" href="#sixdegree">&times;</a>
+          <div class="content">
+            <p>At heart, self-publishing is kind of like a bake sale. The end product does not need to resemble the one that
+              comes from a commercial bakery, but it must taste good. No-one wants the lumpy under baked oatmeal cookies
+              with spinach and alfalfa flavored chips. Around 2011, Naveen Valsakumar and Bhargava Adepalley, engineers by
+              training, started toying with the idea of writing a book together. He is a former technologist and the successful
+              co-founder of Notion Press.
+            </p>
+            <a href="https://register.enantra.org/day3" class="btn"> Buy tickets here <span>&xrarr;</span> </a>
+          </div>
       </div>
     </div>
 
